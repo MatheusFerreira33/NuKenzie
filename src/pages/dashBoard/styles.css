@@ -1,0 +1,249 @@
+header {
+    min-width: 91%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 5px 5px 2px var(--color-grey-2);
+}
+
+header>button {
+    background-color: var(--color-grey-2);
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Nubito', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+header>button:hover {
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-1);
+}
+
+main {
+    width: 95%;
+    max-width: 99%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+main>.form {
+    width: 290px;
+    padding: 16px;
+    margin-left: -40px;
+
+}
+
+main>.form>.containerValueTotal {
+    display: flex;
+    width: 108%;
+    border: 1px solid var(--color-grey-2);
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    padding: 5px;
+}
+
+main>.form>.containerValueTotal>.box1 {
+    width: 96%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    padding-left: 0px;
+}
+
+main>.form>.containerValueTotal>.box1>span {
+    color: var(--color-Primary-1);
+    font-size: 16px;
+}
+
+main>.form>form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 100;
+    padding: 16px;
+    width: 100%;
+    border: 1px solid var(--color-grey-2);
+}
+
+main>.form>form>button {
+    background-color: var(--color-Primary-1);
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--color-grey-1);
+    font-family: 'Nubito', sans-serif;
+    cursor: pointer;
+}
+
+
+main>.form>form>button:hover {
+    background-color: var(--color-Primary-2);
+}
+
+main>.form>form>input {
+    border-radius: 8px;
+    width: 262px;
+    background-color: var(--color-grey-2);
+    padding: 16px;
+    border: none;
+
+}
+
+main>.form>form>.containerBox {
+    width: 100%;
+    height: 100px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+main>.form>form>.containerBox>.box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 150px;
+    max-width: 100%;
+    font-weight: 100;
+}
+
+main>.form>form>.containerBox>.box1>input {
+    border-radius: 8px;
+    width: 50px;
+    background-color: var(--color-grey-2);
+    padding: 16px;
+    border: none;
+}
+
+
+
+main>.form>form>.containerBox>.box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 150px;
+    max-width: 100%;
+    font-weight: 100;
+}
+
+main>.form>form>.containerBox>.box2>select {
+    border-radius: 8px;
+    width: 100px;
+    background-color: var(--color-grey-2);
+    padding: 16px;
+    border: none;
+}
+
+
+main>.resumeFinance {
+    width: 100%;
+}
+
+main>.resumeFinance>ul {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 25px;
+    padding-left: 0px;
+    padding: 16px;
+}
+
+main>.resumeFinance>ul>li {
+
+    background-color: var(--color-grey-2);
+    border: none;
+    box-shadow: 5px 0px 0px inset var(--color-Segundary);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+main>.resumeFinance>ul>li:hover {
+    box-shadow: 5px 5px 15px 5px var(--color-grey-3);
+    cursor: pointer;
+}
+
+main>.resumeFinance>ul>li .box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main>.resumeFinance>ul>li>.box1>h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+main>.resumeFinance>ul>li>.box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main>.resumeFinance>ul>li>.box2>button {
+    width: 28px;
+    display: flex;
+    align-items: flex-start;
+    border: none;
+    background-color: var(--color-grey-2);
+}
+
+main>.resumeFinance>ul>li>.box2>button>img {
+    margin: 0px;
+    padding: 0px;
+    width: 13px;
+    cursor: pointer;
+}
+
+
+@media (min-width:768px) {
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+
+    main>.resumeFinance {
+        min-width: 270px;
+    }
+
+    main>.resumeFinance>ul {
+        min-width: 270px;
+
+        float: right;
+    }
+
+
+    main>.resumeFinance>ul>li {
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main>.resumeFinance>ul>li>.box2 {
+      flex-direction: row;
+    }
+
+    main>.form {
+        margin-left: 5px;
+        min-width: 300px;
+    }
+
+}
